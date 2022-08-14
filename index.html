@@ -119,7 +119,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="bg-success rounded-3 px-5 py-4 row container align-items-center">
+                    <div class="bg-success rounded-3 px-5 py-4 row container align-items-center" id="backpack">
                         <h1 class="col-8 text-white">Bag</h1>
                         <img class="col-4" src="images/categories/bag.png" alt="">
                     </div>
@@ -143,16 +143,16 @@
         <h2>Shoes</h2>
         <div class="row">
             <div class="col-4">
-                <div class="container shadow-lg rounded-3 p-3">
+                <div class="container shadow-lg rounded-3 p-3 card-demo">
                     <img class="img-fluid mb-3" src="images/shoes/shoe-1.png" alt="">
                     <h4>Supply 350</h4>
                     <h2>$160</h2>
                     <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <button class="btn border-0 mt-5 mt-3">Buy Now</button>
+                    <button class="btn border-0 mt-5">Buy Now</button>
                 </div>
             </div>
             <div class="col-4">
-                <div class="container shadow-lg rounded-3 p-3">
+                <div class="container shadow-lg rounded-3 p-3 card-demo">
                     <img class="img-fluid mb-3" src="images/shoes/shoe-2.png" alt="">
                     <h4>Supply 350</h4>
                     <h2>$160</h2>
@@ -161,7 +161,7 @@
                 </div>
             </div>
             <div class="col-4">
-                <div class="container shadow-lg rounded-3 p-3">
+                <div class="container shadow-lg rounded-3 p-3 card-demo">
                     <img class="img-fluid mb-3" src="images/shoes/shoe-3.png" alt="">
                     <h4>Supply 350</h4>
                     <h2>$160</h2>
@@ -177,7 +177,7 @@
         <h2>Bags</h2>
         <div class="row">
             <div class="col-4">
-                <div class="container shadow-lg rounded-3 p-3">
+                <div class="container shadow-lg rounded-3 p-3 card-demo">
                     <img class="img-fluid mb-3" src="images/bags/bag-1.png" alt="">
                     <h4>Supply 350</h4>
                     <h2>$160</h2>
@@ -186,7 +186,7 @@
                 </div>
             </div>
             <div class="col-4">
-                <div class="container shadow-lg rounded-3 p-3">
+                <div class="container shadow-lg rounded-3 p-3 card-demo">
                     <img class="img-fluid mb-3" src="images/bags/bag-2.png" alt="">
                     <h4>Supply 350</h4>
                     <h2>$160</h2>
@@ -195,7 +195,7 @@
                 </div>
             </div>
             <div class="col-4">
-                <div class="container shadow-lg rounded-3 p-3">
+                <div class="container shadow-lg rounded-3 p-3 card-demo">
                     <img class="img-fluid mb-3" src="images/bags/bag-3.png" alt="">
                     <h4>Supply 350</h4>
                     <h2>$160</h2>
@@ -212,13 +212,13 @@
     ======== Subscription started =========
     ====================================== -->
 
-        <section class="container-lg p-5 rounded-3" style="background: #FCEAE8">
+        <section class="container-lg p-5 rounded-3" style="background: #FCEAE8" id="subscription">
             <div class="d-flex justify-content-center">
-                <div>
+                <div id="propagate">
                     <h2>LET'S STAY IN TOUCH</h2>   
                     <p>Get updates on sales, specials and more</p>
-                    <input type="text" class="w-100 p-2 rounded border border-secondary" style="outline: none;">
-                    <button class="btn d-block mt-2 border-0">Submit</button>
+                    <input type="text" class="w-100 p-2 rounded border border-secondary" style="outline: none;" id="input-email" placeholder="type 'email'">
+                    <button class="btn d-block mt-2 border-0" onclick="clickMe()" id="submit-button" disabled>Submit</button>
                 </div>
             </div>
         </section>
@@ -240,5 +240,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
   </body>
 </html>
